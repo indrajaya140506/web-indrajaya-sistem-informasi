@@ -183,6 +183,27 @@ body {
     background-attachment: fixed;
     background-position: center;
   }
+  .profil-box {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 15px;
+  padding: 20px;
+  border-radius: 15px;
+  background-image: url('hitam.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  max-width: 90%;
+  margin: auto;
+}
+
+.profil-box div:nth-child(odd) {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
   
 </style>
 
@@ -217,9 +238,9 @@ body {
   <h2 style="background: linear-gradient(to right, #0f0f0f, #555); padding: 10px; border-radius: 8px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.5); color: gold;">Profil Pribadi</h2>
 
   <div style="display: flex; justify-content: center; gap: 25px; margin-top: 25px;">
-    <img src="kiri.jpg" alt="Foto Kiri" width="250" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.7);">
+    
     <img src="tengah.jpg" alt="Foto Saya" width="300" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.7);">
-    <img src="kanan.jpg" alt="Foto Kanan" width="250" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.7);">
+   
   </div>
 
   <div style="height: 3px; width: 80%; margin: 30px auto; background: linear-gradient(to right, #000, #ccc, #000);"></div>
@@ -228,12 +249,14 @@ body {
   background-image: url('hitam.jpg'); 
   background-size: cover; background-position: center; border-radius: 15px;padding: 20px;box-shadow: 0 0 10px rgba(0,0,0,0.6);
   width: 80%;">
-    <tr><td><strong >NAMA</strong></td><td>:</td><td>Komang indrajaya Darmawiguna</td></tr>
-    <tr><td><strong >TEMPAT, TGL LAHIR</strong></td><td>:</td><td >Karangasem, 14 Mei 2006</td></tr>
-    <tr><td><strong >JENIS KELAMIN</strong></td><td>:</td><td>Laki-laki</td></tr>
-    <tr><td><strong>ALAMAT</strong></td><td>:</td><td>Karangasem - Bali</td></tr>
-    <tr><td><strong >STATUS</strong></td><td>:</td><td>Belum Menikah</td></tr>
-    <tr><td><strong >MOTIVASI</strong></td><td>:</td><td>"Keberhasilan dimulai dari proses"</td></tr>
+    <div class="profil-box">
+  <div><strong>NAMA</strong></div><div>: Komang Indrajaya Darmawiguna</div>
+  <div><strong>TEMPAT, TGL LAHIR</strong></div><div>: Karangasem, 14 Mei 2006</div>
+  <div><strong>JENIS KELAMIN</strong></div><div>: Laki-laki</div>
+  <div><strong>ALAMAT</strong></div><div>: Karangasem - Bali</div>
+  <div><strong>STATUS</strong></div><div>: Belum Menikah</div>
+  <div><strong>MOTIVASI</strong></div><div>: “Keberhasilan dimulai dari proses”</div>
+</div>
   </table>
 </section>
 
@@ -243,9 +266,9 @@ body {
     Pendidikan
   </h2>
   <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
-    <img src="kuliah.jpg" alt="Foto Kiri" width="250" style="border-radius: 10px;">
+  
     <img src="tk.jpg" alt="Foto Tengah" width="300" style="border-radius: 10px;">
-    <img src="Sma.jpg" alt="Foto Kanan" width="250" style="border-radius: 10px;">
+   
   </div>
    <div style="height: 3px; width: 80%; margin: 30px auto; background: linear-gradient(to right, #000, #ccc, #000);"></div>
 
